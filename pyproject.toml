@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "contribution-distribution"
+version = "0.1.0"
+description = ""
+authors = ["Brenden Matthews <github@brenden.brndn.io>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "contribution_distribution"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "^2.0.3"
+numpy = "^1.25.2"
+matplotlib = "^3.7.2"
+seaborn = "^0.12.2"
+pygithub = "^1.59.1"
+jupyterlab = "^4.0.3"
+ipympl = "^0.9.3"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
